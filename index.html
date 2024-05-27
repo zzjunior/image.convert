@@ -22,7 +22,7 @@
 </head>
 <body>
     <div class="container mt-5 shadow rounded-2">
-        <h2 class="text-center text-poppis titulo-page">Conversor de Imagem</h2>
+        <h2 class="text-center text-poppis titulo-page">Conversor de Imagem <i class="fa-regular fa-images"></i></h2>
         <div class="row justify-content-center mt-3">
             <div class="col-8 col-md-6">
                 <input type="file" id="imageInput" class="form-control" accept="image/*">
@@ -31,7 +31,7 @@
         <div class="row justify-content-center mt-3">
             <div class="col-8 col-md-6">
                 <select id="formatSelect" class="form-select">
-                    <option value="null">Selecione o formato</option>
+                    <option value="null">converter para...</option>
                     <option value="image/png">PNG</option>
                     <option value="image/jpeg">JPEG</option>
                     <option value="image/webp">WEBP</option>
@@ -41,17 +41,32 @@
         </div>
         <div class="row justify-content-center mt-3">
             <div class="col-8 col-md-6 text-center">
-                <button id="convertButton" class="btn btn-primary converter-btn">Converter <i class="fa-regular fa-file-image"></i></button>
+                <button id="convertButton" class="btn btn-dark converter-btn">Converter <i class="fa-regular fa-file-image"></i></button>
             </div>
         </div>
         <div class="row justify-content-center mt-3">
-            <div class="col-8 col-md-6 text-center">
+            <div class="col-8 col-md-6 text-center mb-5">
                 <a id="downloadLink" class="btn btn-success" style="display: none;">Download <i class="fa-solid fa-download"></i></a>
             </div>
         </div>
         <canvas id="outputCanvas"></canvas>
     </div>
-
+    <footer class="footer mt-5">
+        <section>
+            <div class="sugestoes">
+                <p class="text-center" style="font-size:small">
+                    Nos envie sugestões de melhorias para o <a style="text-decoration: none;" href="mailto:contato@agenciatj.com.br" target="_blank" rel="noopener noreferrer">contato@clickston.com.br</a>
+                </p>
+            </div>
+        </section>
+        <div class="copyright-desenvolvedor">
+                    <p class="text-center m-2">
+                    <a class="text-black-50" style="text-decoration: none; font-size:x-small" href="http://agenciatj.com.br" target="_blank" rel="noopener noreferrer">Desenvolvido por ©
+                    <img class="logo-desenvolvedor" src="https://agenciatj.com.br/images/TJ.png" alt="TJ" title="TJ Design &amp; Serviços Web" width="15px" height="15px" style="border-radius: 50%;">
+                </a>
+                    </p>
+                </div>
+    </footer>
     <script src="image_converter.js"></script>
 </body>
 </html>
